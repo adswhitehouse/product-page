@@ -56,4 +56,139 @@ select {
 body {
   background-color: #cde8ff;
   font-family: "Poppins", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #242021;
+}
+
+/* Product Container */
+.product-container {
+  display: flex;
+  width: 50rem;
+}
+
+/* Product Images */
+.product-images {
+  background-color: #242021;
+  padding-top: 7.5rem;
+  width: 50%;
+  box-shadow: -15px 15px 15px rgba(0, 0, 0, 0.25);
+}
+
+.product-images img {
+  width: 25rem;
+}
+
+/* Product Content */
+.product-content {
+  background-color: #fefefe;
+  width: 50%;
+  margin-block: 1rem;
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.25);
+}
+
+.product-content h1 {
+  font-size: 2.5rem;
+}
+
+.product-content p {
+  color: #594e52;
+}
+
+/* Price */
+.price {
+  font-size: 2.5rem;
+  opacity: 0.75;
+  font-weight: 600;
+}
+
+.product-content .discount {
+  color: #0cbb7f;
+  font-weight: 600;
+  margin-block: -0.75rem 2rem;
+}
+
+/* Sizes */
+.sizes {
+  display: flex;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.size-choices {
+  display: flex;
+  gap: 1rem;
+}
+
+.sizes button {
+  background-color: transparent;
+  border: none;
+  color: #594e52;
+  cursor: pointer;
+}
+
+/* Colors */
+.colors {
+  display: flex;
+  align-items: center;
+  gap: 3.05rem;
+  margin-block: 1rem;
+}
+
+.color-choices {
+  display: flex;
+  gap: 0.71rem;
+}
+
+.color-choices div {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.color-choices :nth-child(1) {
+  background-color: red;
+}
+
+.color-choices :nth-child(2) {
+  background-color: #0cbb7f;
+}
+
+.color-choices :nth-child(3) {
+  background-color: blue;
+}
+
+.color-choices :nth-child(4) {
+  background-color: pink;
+}
+/* Quantity */
+.quantity {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.quantity input {
+  border: none;
+  outline: none;
+  background-color: #dbdbdb;
+  width: 4rem;
+  border-radius: 5rem;
+  padding: 0.25rem 0.75rem;
+}
+
+/* Buy Now */
+.buy-now {
+  margin-top: auto;
+  background-color: rgb(71, 64, 208);
+  border: none;
+  color: #fefefe;
+  padding-block: 0.75rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(71, 64, 208, 0.75);
 }

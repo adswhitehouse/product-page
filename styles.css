@@ -95,6 +95,10 @@ body {
   background-color: #fefefe;
 }
 
+.image-selectors :nth-child(1) {
+  background-color: rgb(71, 64, 208);
+}
+
 /* Product Content */
 .product-content {
   background-color: #fefefe;
@@ -176,7 +180,7 @@ body {
 }
 
 .color-choices :nth-child(3) {
-  background-color: blue;
+  background-color: rgb(71, 64, 208);
 }
 
 .color-choices :nth-child(4) {

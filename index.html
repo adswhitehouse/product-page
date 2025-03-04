@@ -20,45 +20,70 @@
     <div class="product-images">
       <img class="jsMainImage" src="./images/image1.png" alt="male modelling the product">
       <div class="image-selectors">
-        <button class="jsImageSelection" data-id="1"></button>
-        <button class="jsImageSelection" data-id="2"></button>
-        <button class="jsImageSelection" data-id="3"></button>
+        <span class="jsImageSelection" data-id="1"></span>
+        <span class="jsImageSelection" data-id="2"></span>
+        <span class="jsImageSelection" data-id="3"></span>
       </div>
     </div>
     <div class="product-content">
       <div>
         <h1>Casual T Shirt</h1>
-        <p class="price">£14.99</p>
-        <p class="discount">30% OFF</p>
+        <h2 class="price">£14.99</h2>
+        <h3 class="discount">30% OFF</h3>
       </div>
       <div>
         <p class="description">Wrangler is an American manufacturer of jeans and other clothing items, particularly
           workwear.</p>
       </div>
       <div>
-        <div class="sizes">
-          <p>Size</p>
-          <div class="size-choices">
-            <button class="jsSizeOption">S</button>
-            <button class="jsSizeOption">M</button>
-            <button class="jsSizeOption">L</button>
-            <button class="jsSizeOption">XL</button>
-            <button class="jsSizeOption">XXL</button>
+        <form action="submit">
+          <div class="sizes">
+            <p>Size</p>
+            <label for="small">
+              <input type="radio" id="small" name="size">
+              <span>S</span>
+            </label>
+            <label for="medium">
+              <input type="radio" id="medium" name="size">
+              <span>M</span>
+            </label>
+            <label for="large">
+              <input type="radio" id="large" name="size">
+              <span>L</span>
+            </label>
+            <label for="xlarge">
+              <input type="radio" id="xlarge" name="size">
+              <span>XL</span>
+            </label>
+            <label for="xxlarge">
+              <input type="radio" id="xxlarge" name="size">
+              <span>XXL</span>
+            </label>
           </div>
-        </div>
-        <div class="colors">
-          <p>Color</p>
-          <div class="color-choices">
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
+          <div class="colors">
+            <p>Color</p>
+            <label for="red">
+              <input type="radio" id="red" name="color">
+              <span class="color1"></span>
+            </label>
+            <label for="blue">
+              <input type="radio" id="blue" name="color">
+              <span class="color2"></span>
+            </label>
+            <label for="green">
+              <input type="radio" id="green" name="color">
+              <span class="color3"></span>
+            </label>
+            <label for="pink">
+              <input type="radio" id="pink" name="color">
+              <span class="color4"></span>
+            </label>
           </div>
-        </div>
-        <div class="quantity">
-          <p>Quantity</p>
-          <input type="number" placeholder="1">
-        </div>
+          <div class="quantity">
+            <p>Quantity</p>
+            <input type="number" value="1">
+          </div>
+        </form>
       </div>
       <button class="buy-now">Buy Now</button>
     </div>

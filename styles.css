@@ -91,7 +91,7 @@ body {
   top: 1.5rem;
 }
 
-.image-selectors button {
+.image-selectors span {
   width: 1rem;
   height: 1rem;
   border: none;
@@ -113,7 +113,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: -15px 15px 15px rgba(0, 0, 0, 0.25);
 }
 
 .product-content h1 {
@@ -125,71 +125,91 @@ body {
 .price {
   font-size: 2.5rem;
   font-weight: 600;
+  margin-top: 1rem;
 }
 
 .product-content .discount {
   color: #0cbb7f;
   font-weight: 600;
+  font-size: 1rem;
 }
 
 /* Sizes */
 .sizes {
   display: flex;
-  gap: 4rem;
+  align-items: center;
 }
 
-.size-choices {
-  display: flex;
-  gap: 1rem;
-}
-
-.sizes button {
-  background-color: transparent;
-  border: none;
-  color: #53525d;
+.sizes span {
   cursor: pointer;
+  margin-right: 1rem;
+}
+
+.sizes p {
+  width: 6rem;
+}
+
+.sizes input {
+  display: none;
+}
+
+.sizes input:checked + span {
+  color: #4740d0;
+  font-weight: 600;
 }
 
 /* Colors */
 .colors {
   display: flex;
   align-items: center;
-  gap: 3.05rem;
-  margin-block: 0.5rem;
+  margin-block: 1rem;
 }
 
-.color-choices {
-  display: flex;
-  gap: 0.71rem;
+.colors p {
+  width: 6rem;
 }
 
-.color-choices button {
+.colors input {
+  display: none;
+}
+
+.colors input:checked + span {
+  box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
+  transform: scale(0.6);
+}
+
+.colors span {
+  display: inline-block;
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  border: none;
+  margin-right: 0.6rem;
   cursor: pointer;
 }
 
-.color-choices :nth-child(1) {
+.color1 {
   background-color: red;
 }
 
-.color-choices :nth-child(2) {
-  background-color: #0cbb7f;
+.color2 {
+  background-color: blue;
 }
 
-.color-choices :nth-child(3) {
-  background-color: rgb(71, 64, 208);
+.color3 {
+  background-color: green;
 }
 
-.color-choices :nth-child(4) {
+.color4 {
   background-color: pink;
 }
+
 /* Quantity */
 .quantity {
   display: flex;
-  gap: 1.4rem;
+}
+
+.quantity p {
+  width: 6rem;
 }
 
 .quantity input {
